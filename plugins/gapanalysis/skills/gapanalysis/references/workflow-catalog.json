@@ -1,0 +1,95 @@
+{
+  "schema_version": 1,
+  "categories": {
+    "cell-culture-media": ["cell culture media", "core cell culture", "dmem", "rpmi", "mem", "ham's f", "f12 medium", "stemflex", "opti-mem", "medium"],
+    "sera-and-supplements": ["fetal bovine serum", "fbs", "serum", "supplement", "growth supplement"],
+    "cell-culture-plastics": ["cell culture flask", "culture plate", "multiwell plate", "cell culture dish", "culture vessel", "nunc", "plastics"],
+    "cell-dissociation-and-counting": ["trypsin", "trypLE", "accutase", "cell dissociation", "cell counter", "countess"],
+    "cryopreservation": ["cryopreservation", "cryomedium", "freezing medium", "cryovial"],
+    "transfection": ["lipofectamine", "expifectamine", "transfection", "transient 293", "transfxn", "tfxn", "electroporation", "neon transfection"],
+    "rnai": ["sirna", "rna interference", "rnai", "silencer select"],
+    "genome-editing": ["crispr", "cas9", "gene editing", "guide rna", "grna"],
+    "nucleic-acid-purification": ["rna isolation", "dna isolation", "nucleic acid purification", "purification plasmid", "plasmid column", "purelink", "magmax", "trizol", "extraction kit"],
+    "pcr-qpcr-reagents": ["qpcr", "real time pcr", "master mix", "taqman", "sybr", "pcr reagent", "supermix"],
+    "pcr-plastics": ["pcr plate", "optical plate", "optical seal", "pcr tube", "reaction plate"],
+    "pcr-instruments": ["quantstudio", "real time pcr instrument", "thermal cycler", "proflex", "simpliamp"],
+    "cloning-and-enzymes": ["restriction enzyme", "dna ligase", "cloning", "gateway", "topo", "geneart", "polymerase"],
+    "sequencing-library-prep": ["ngs", "library prep", "ion torrent", "amplicon sequencing", "sequencing kit"],
+    "antibodies": ["antibody", "monoclonal", "polyclonal", "primary antibody", "secondary antibody"],
+    "western-blot": ["western blot", "immunoblot", "nitrocellulose", "pvdf", "ecl substrate", "western detection"],
+    "immunoassays": ["elisa", "luminex", "procarta", "immunoassay", "multiplex assay"],
+    "protein-purification": ["protein purification", "his tag", "protein a", "protein g", "affinity resin", "dialysis", "desalting", "desalt", "concentration"],
+    "protein-quantitation": ["bca assay", "bradford assay", "protein assay", "protein quantitation", "nanodrop"],
+    "flow-cytometry-antibodies": ["flow cytometry antibody", "efluor", "super bright", "flow antibody", "cd3 antibody", "cd4 antibody", "cd8 antibody"],
+    "flow-cytometry-reagents": ["compensation bead", "ultracomp", "flow cytometry buffer", "fixation permeabilization", "viability dye"],
+    "flow-cytometry-instruments": ["attune", "flow cytometer", "acoustic focusing cytometer"],
+    "cell-imaging": ["evos", "cellinsight", "cell imaging", "high content imaging", "microscope"],
+    "fluorescent-labeling": ["alexa fluor", "fluorescent dye", "cell tracker", "live dead", "nuclear stain", "dapi"],
+    "cell-health-assays": ["cell viability", "apoptosis", "cell proliferation", "alamarblue", "mts assay", "cell health"],
+    "recombinant-expression": ["expi293", "expicho", "expression competent cells", "expression comp cells", "protein expression", "expression system", "transient expression"],
+    "microbiology": ["microbiology", "bacterial culture", "agar", "broth", "competent cells"],
+    "general-lab-plastics": ["pipette tip", "microcentrifuge tube", "conical tube", "reservoir", "lab plastic"]
+  },
+  "workflows": [
+    {
+      "id": "cell-culture",
+      "name": "Mammalian cell culture",
+      "categories": ["cell-culture-media", "sera-and-supplements", "cell-culture-plastics", "cell-dissociation-and-counting", "cryopreservation"],
+      "anchors": ["cell-culture-media", "sera-and-supplements", "cell-culture-plastics"]
+    },
+    {
+      "id": "gene-expression-analysis",
+      "name": "Gene expression analysis",
+      "categories": ["nucleic-acid-purification", "pcr-qpcr-reagents", "pcr-plastics", "pcr-instruments"],
+      "anchors": ["nucleic-acid-purification", "pcr-qpcr-reagents", "pcr-instruments"]
+    },
+    {
+      "id": "genome-editing",
+      "name": "Genome editing",
+      "categories": ["genome-editing", "transfection", "cell-culture-media", "nucleic-acid-purification", "pcr-qpcr-reagents"],
+      "anchors": ["genome-editing", "transfection"]
+    },
+    {
+      "id": "rna-interference",
+      "name": "RNA interference",
+      "categories": ["rnai", "transfection", "cell-culture-media", "nucleic-acid-purification", "pcr-qpcr-reagents"],
+      "anchors": ["rnai", "transfection"]
+    },
+    {
+      "id": "molecular-cloning",
+      "name": "Molecular cloning",
+      "categories": ["cloning-and-enzymes", "nucleic-acid-purification", "pcr-qpcr-reagents", "microbiology"],
+      "anchors": ["cloning-and-enzymes", "pcr-qpcr-reagents"]
+    },
+    {
+      "id": "protein-expression-and-purification",
+      "name": "Protein expression and purification",
+      "categories": ["recombinant-expression", "cell-culture-media", "protein-purification", "protein-quantitation", "western-blot"],
+      "anchors": ["recombinant-expression", "protein-purification"]
+    },
+    {
+      "id": "protein-detection",
+      "name": "Protein detection",
+      "categories": ["antibodies", "western-blot", "immunoassays", "protein-quantitation"],
+      "anchors": ["antibodies", "western-blot", "immunoassays"]
+    },
+    {
+      "id": "flow-cytometry",
+      "name": "Flow cytometry",
+      "categories": ["flow-cytometry-antibodies", "flow-cytometry-reagents", "flow-cytometry-instruments", "cell-health-assays"],
+      "anchors": ["flow-cytometry-antibodies", "flow-cytometry-reagents", "flow-cytometry-instruments"]
+    },
+    {
+      "id": "cell-imaging",
+      "name": "Cell imaging",
+      "categories": ["cell-imaging", "fluorescent-labeling", "cell-health-assays", "cell-culture-plastics"],
+      "anchors": ["cell-imaging", "fluorescent-labeling"]
+    },
+    {
+      "id": "sequencing",
+      "name": "Sequencing",
+      "categories": ["nucleic-acid-purification", "pcr-qpcr-reagents", "sequencing-library-prep"],
+      "anchors": ["sequencing-library-prep", "nucleic-acid-purification"]
+    }
+  ]
+}

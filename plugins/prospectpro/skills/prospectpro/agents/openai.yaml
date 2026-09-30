@@ -1,0 +1,7 @@
+{
+  "interface": {
+    "display_name": "ProspectPro",
+    "short_description": "Account whitespace insights",
+    "default_prompt": "Use $prospectpro to follow the one-update evidence-to-report protocol for this customer and purchase-history workbook, then deliver the generated brief without map-preview troubleshooting."
+  }
+}

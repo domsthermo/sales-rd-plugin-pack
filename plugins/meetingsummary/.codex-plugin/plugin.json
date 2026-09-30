@@ -1,0 +1,21 @@
+{
+  "name": "meetingsummary",
+  "version": "0.2.1+codex.20260930173159",
+  "description": "Turns meeting notes into a concise recap and a Salesforce-ready opportunity update.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "MeetingSummary",
+    "shortDescription": "Meeting recap + CRM note",
+    "longDescription": "Paste meeting notes and receive two copyable text fields: a concise structured meeting summary and an extremely short Salesforce opportunity update ending with the meeting date.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [],
+    "defaultPrompt": "Paste your meeting notes below. Create the concise meeting summary and Salesforce update.",
+    "brandColor": "#D71920",
+    "composerIcon": "./assets/meetingsummary-icon.png",
+    "logo": "./assets/meetingsummary-icon.png"
+  }
+}

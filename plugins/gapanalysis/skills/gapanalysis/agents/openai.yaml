@@ -1,0 +1,7 @@
+interface:
+  display_name: "GapAnalysis"
+  short_description: "Purchase movement and product gap analysis"
+  default_prompt: "Use $gapanalysis to analyze this customer's purchase spreadsheet and identify gains, losses, lapses, and evidence-backed product gaps."
+
+policy:
+  allow_implicit_invocation: true

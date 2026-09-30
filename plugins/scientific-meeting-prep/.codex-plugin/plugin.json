@@ -1,0 +1,28 @@
+{
+  "interface": {
+    "displayName": "premeetingprep",
+    "shortDescription": "Technical meeting briefs",
+    "longDescription": "Find the right customer meeting, recover the relevant email thread, research the science and official product fit, and create a seller-ready Markdown brief with workflow diagrams, technical questions, source links, and clearly labeled gaps.",
+    "developerName": "Dominick Giuntini",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive"
+    ],
+    "brandColor": "#D71920",
+    "composerIcon": "./assets/premeetingprep-icon.png",
+    "logo": "./assets/premeetingprep-icon.png",
+    "defaultPrompt": [
+      "Prepare a technical brief for my next customer meeting.",
+      "Find my upcoming scientific meeting and research the email context.",
+      "Turn this meeting invitation into a Markdown scientific meeting brief."
+    ]
+  },
+  "name": "scientific-meeting-prep",
+  "version": "0.2.1",
+  "description": "Creates evidence-grounded technical customer meeting briefs from calendar, email, public science, and official product sources, with clear workflow maps and seller-ready questions.",
+  "author": {
+    "name": "Dominick Giuntini"
+  },
+  "keywords": [],
+  "skills": "./skills"
+}

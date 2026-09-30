@@ -1,0 +1,7 @@
+interface:
+  display_name: "MeetingSummary"
+  short_description: "Create a recap and CRM note"
+  icon_small: "./assets/meetingsummary-icon.png"
+  icon_large: "./assets/meetingsummary-icon.png"
+  brand_color: "#D71920"
+  default_prompt: "Use $meetingsummary to turn these meeting notes into a concise recap and Salesforce update."

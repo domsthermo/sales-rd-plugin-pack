@@ -1,0 +1,34 @@
+{
+  "name": "gapanalysis",
+  "version": "1.1.0",
+  "description": "Analyze customer purchase spreadsheets for growth, loss, lapse, and evidence-backed product gaps.",
+  "author": {
+    "name": "Local developer"
+  },
+  "keywords": [
+    "account analysis",
+    "gap analysis",
+    "purchase history",
+    "sales"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "GapAnalysis",
+    "shortDescription": "Find purchase gains, losses, lapses, and gaps.",
+    "longDescription": "Processes a customer purchase-history spreadsheet into auditable sales movement tables and a concise gap-analysis report. It can add current public research, but it does not create charts, draft outreach, access email, or change CRM records.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "brandColor": "#E31B23",
+    "composerIcon": "./assets/logo.png",
+    "logo": "./assets/logo.png",
+    "defaultPrompt": [
+      "Analyze this customer purchase spreadsheet.",
+      "Find gained, lost, and lapsed business.",
+      "Research this customer and identify product gaps."
+    ]
+  }
+}

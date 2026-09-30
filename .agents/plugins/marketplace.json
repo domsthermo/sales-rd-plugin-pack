@@ -1,0 +1,56 @@
+{
+  "name": "sales-rd-plugin-pack",
+  "interface": {
+    "displayName": "Sales R&D Plugin Pack"
+  },
+  "plugins": [
+    {
+      "name": "gapanalysis",
+      "source": {
+        "source": "local",
+        "path": "./plugins/gapanalysis"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "prospectpro",
+      "source": {
+        "source": "local",
+        "path": "./plugins/prospectpro"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "meetingsummary",
+      "source": {
+        "source": "local",
+        "path": "./plugins/meetingsummary"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    },
+    {
+      "name": "scientific-meeting-prep",
+      "source": {
+        "source": "local",
+        "path": "./plugins/scientific-meeting-prep"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

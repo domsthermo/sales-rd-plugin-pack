@@ -1,0 +1,36 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "prospectpro",
+  "version": "1.3.1",
+  "description": "Fast biological R&D account whitespace, win-back, and contact intelligence from purchase history, bundled public research, and optional email context.",
+  "author": {
+    "name": "ProspectPro"
+  },
+  "keywords": [
+    "account research",
+    "biological R&D",
+    "cross-sell",
+    "life sciences",
+    "purchase history",
+    "sales intelligence",
+    "Thermo Fisher",
+    "whitespace"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "ProspectPro",
+        "shortDescription": "Account whitespace insights",
+        "longDescription": "Turn a customer purchase-history workbook into a seller-ready biological R&D account brief through a fast evidence-to-report pipeline. ProspectPro fuzzy-matches SGNs, compares YTD purchasing, bundles current research, identifies credible whitespace and win-backs, generates maps and product links automatically, matches verified contacts, and drafts personalized unsent outreach.",
+        "developerName": "ProspectPro",
+        "category": "Productivity",
+        "capabilities": ["Research", "Data Analysis", "File Processing"],
+        "defaultPrompt": [
+          "Run the fast ProspectPro analysis for this customer and purchase-history workbook.",
+          "Find whitespace and lapsed-product win-backs for this account.",
+          "Set up my reusable ProspectPro writing style."
+        ]
+      }
+    }
+  }
+}
